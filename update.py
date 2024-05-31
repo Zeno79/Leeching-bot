@@ -50,9 +50,9 @@ if DATABASE_URL:
 
 UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
 if len(UPSTREAM_REPO) == 0:
-    UPSTREAM_REPO = ''
+    UPSTREAM_REPO = 'https://github.com/5hojib/Aeon'
 
-UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', 'https://github.com/Zeno79/Leeching-bot')
+UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
 if len(UPSTREAM_BRANCH) == 0:
     UPSTREAM_BRANCH = 'main'
 
